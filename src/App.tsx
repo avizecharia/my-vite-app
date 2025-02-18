@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     const fetchDogs = async () => {
       try {
-        const response = await fetch('http://localhost:3031/', {
+        const response = await fetch('http://class-app:3000/', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ function App() {
 
   const handleAddDog = async () => {
       try {
-        const response = await fetch('http://localhost:3031/add-dog', {
+        const response = await fetch('http://class-app:3000/add-dog', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

@@ -18,7 +18,7 @@ FROM nginx:alpine
 
 WORKDIR /app
 
-COPY --from=builder /app/dist /app
+COPY --from=builder /app/dist /usr/share/nginx/html
 
 EXPOSE  80
 
